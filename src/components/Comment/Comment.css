@@ -1,0 +1,27 @@
+.comment-container {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.comment-field {
+  width: 35%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .commente-file {
+    width: 100%;
+  }
+}
+
+.cmtbtn {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(135, 135, 197);
+  color: white;
+}

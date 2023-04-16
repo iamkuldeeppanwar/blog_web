@@ -1,0 +1,124 @@
+.blog-container {
+  padding: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.blog-image {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1400px) {
+  .img {
+    width: 90%;
+  }
+}
+
+.title {
+  float: left;
+  padding: 5px;
+  font-size: 2em;
+  color: rgb(197, 195, 192);
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5em;
+  }
+}
+
+.createdAt {
+  float: right;
+  padding: 5px;
+  font-size: 1em;
+  margin-top: 10px;
+  font-weight: 700;
+  color: rgb(170, 170, 169);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .createdAt {
+    font-size: 0.8em;
+  }
+}
+
+.description {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 100px auto;
+  padding: 8px;
+  font-size: 1.5em;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.edit-dlt {
+  float: right;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin: 10px;
+}
+
+.edit-dlt > div {
+  background-color: rgb(180, 180, 243);
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.darkbtn {
+  float: right;
+}
+
+.Author {
+  color: rgb(165, 163, 160);
+}
+
+.comment {
+  background-color: #bfc6cf;
+  height: 200px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.comment-box {
+  overflow-x: hidden;
+}
+
+.cmnts {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-gap: 10px;
+}
+
+.name-cmnt {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .img {
+    height: 800px;
+  }
+}
+
+.all {
+  border: 1px solid blueviolet;
+}

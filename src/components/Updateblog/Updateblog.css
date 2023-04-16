@@ -1,0 +1,8 @@
+.updt-img {
+  text-align: center;
+}
+
+.updt-img > img {
+  width: 300px;
+  height: 300px;
+}

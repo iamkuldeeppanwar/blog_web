@@ -1,0 +1,26 @@
+.Login-container {
+  text-align: center;
+}
+
+.Login-input {
+  width: 95%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.Login-label {
+  float: left;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.Login-btn {
+  float: left;
+  padding: 5px 25px;
+  margin-left: 10px;
+  background-color: #ff6c37;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}

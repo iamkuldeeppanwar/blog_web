@@ -1,0 +1,13 @@
+Link {
+  text-decoration: none;
+}
+
+.appBar {
+  border: 1px solid black;
+  /* float: right; */
+}
+
+.lgn-snp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

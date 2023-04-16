@@ -1,0 +1,9 @@
+.profilepic {
+  /* margin-bottom: 20px;
+  vertical-align: middle; */
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top center;
+}

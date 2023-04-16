@@ -1,0 +1,57 @@
+.createimage {
+  width: 100%;
+}
+
+.input-file {
+  margin: 10px;
+}
+
+.dlt-edit {
+  float: right;
+  background-color: blue;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dlt-edit {
+    padding: 5px 10px;
+  }
+}
+
+.input-title {
+  text-align: center;
+  margin: 15px;
+}
+
+.input-title > input {
+  width: 70%;
+  padding: 5px;
+  font-size: 1.3em;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.textarea {
+  text-align: center;
+}
+
+.textarea > textarea {
+  width: 80%;
+}
+
+/* .image-file {
+  border: 1px solid black;
+  width: 6%;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-file {
+    width: 20%;
+  }
+} */
