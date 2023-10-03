@@ -53,7 +53,7 @@ function Createblog() {
 
     e.preventDefault();
     console.log("click");
-    await fetch(`https://blog-post-api-production.up.railway.app/blogs`, {
+    await fetch(`https://blog-post-backend-api.onrender.com/blogs`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -81,7 +81,7 @@ function Createblog() {
     } else {
       await axios
         .patch(
-          `https://blog-post-api-production.up.railway.app/blogs/me/avatar/${localStorage.getItem(
+          `https://blog-post-backend-api.onrender.com/blogs/me/avatar/${localStorage.getItem(
             "id1"
           )}`,
           data,

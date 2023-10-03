@@ -19,20 +19,17 @@ function Comment(props) {
 
   const Comment = async (e) => {
     e.preventDefault();
-    await fetch(
-      `https://blog-post-api-production.up.railway.app/blogs/comment`,
-      {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `${localStorage.getItem("Authorization")}`,
-        },
-        body: JSON.stringify({
-          blogId,
-          comment,
-        }),
-      }
-    )
+    await fetch(`https://blog-post-backend-api.onrender.com/blogs/comment`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `${localStorage.getItem("Authorization")}`,
+      },
+      body: JSON.stringify({
+        blogId,
+        comment,
+      }),
+    })
       .then((comment) => comment.json())
       .then((comment) => {
         if (comment.error) {

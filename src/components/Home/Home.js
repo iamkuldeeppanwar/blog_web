@@ -14,7 +14,7 @@ function Home() {
 
   useEffect(async () => {
     console.log("effect");
-    await fetch(`https://blog-post-api-production.up.railway.app/allblogs`, {
+    await fetch(`https://blog-post-backend-api.onrender.com/allblogs`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

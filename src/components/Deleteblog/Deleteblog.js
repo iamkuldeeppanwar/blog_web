@@ -7,14 +7,11 @@ function Deleteblog() {
   const Navigate = useNavigate();
   useEffect(async () => {
     await axios
-      .delete(
-        `https://blog-post-api-production.up.railway.app/blogs/${params.id}`,
-        {
-          headers: {
-            Authorization: `${localStorage.getItem("Authorization")}`,
-          },
-        }
-      )
+      .delete(`https://blog-post-backend-api.onrender.com/blogs/${params.id}`, {
+        headers: {
+          Authorization: `${localStorage.getItem("Authorization")}`,
+        },
+      })
       .then((res) => {
         console.log(res);
         localStorage.removeItem("id1");

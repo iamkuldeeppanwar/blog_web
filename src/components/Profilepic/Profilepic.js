@@ -8,14 +8,11 @@ function Profilepic() {
 
   useEffect(() => {
     axios
-      .get(
-        `https://blog-post-api-production.up.railway.app/users/${id}/avatar`,
-        {
-          headers: {
-            Authorization: `${localStorage.getItem("Authorization")}`,
-          },
-        }
-      )
+      .get(`https://blog-post-backend-api.onrender.com/users/${id}/avatar`, {
+        headers: {
+          Authorization: `${localStorage.getItem("Authorization")}`,
+        },
+      })
       .then((image) => {
         setPic(image.data.data);
       });
@@ -25,7 +22,7 @@ function Profilepic() {
     <div>
       <img
         className="profilepic"
-        src={`https://blog-post-api-production.up.railway.app/public/img/user/${pic}`}
+        src={`https://blog-post-backend-api.onrender.com/public/img/user/${pic}`}
       />
     </div>
   );

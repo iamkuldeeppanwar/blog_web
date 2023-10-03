@@ -25,7 +25,7 @@ function Updateblog(props) {
     data.append("image", image);
     e.preventDefault();
     await fetch(
-      `https://blog-post-api-production.up.railway.app/blogs/${props.data._id}`,
+      `https://blog-post-backend-api.onrender.com/blogs/${props.data._id}`,
       {
         method: "PATCH",
         headers: {
@@ -45,7 +45,7 @@ function Updateblog(props) {
       console.log("axios");
       await axios
         .patch(
-          `https://blog-post-api-production.up.railway.app/blogs/me/avatar/${props.data._id}`,
+          `https://blog-post-backend-api.onrender.com/blogs/me/avatar/${props.data._id}`,
           data,
           {
             headers: {
@@ -71,7 +71,7 @@ function Updateblog(props) {
         <div className="updt-img">
           <img
             alt="img"
-            src={`https://blog-post-api-production.up.railway.app/public/img/blog/${props.data.image}`}
+            src={`https://blog-post-backend-api.onrender.com/public/img/blog/${props.data.image}`}
           />
         </div>
       </div>

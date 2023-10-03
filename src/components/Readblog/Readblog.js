@@ -32,7 +32,7 @@ function Readblog() {
 
   const getBlog = async () => {
     await fetch(
-      `https://blog-post-api-production.up.railway.app/blogs/${params.id}`,
+      `https://blog-post-backend-api.onrender.com/blogs/${params.id}`,
       {
         method: "GET",
         headers: {
@@ -75,7 +75,7 @@ function Readblog() {
           <div className="blog-image">
             <img
               className="img"
-              src={`https://blog-post-api-production.up.railway.app/public/img/blog/${blog.image}`}
+              src={`https://blog-post-backend-api.onrender.com/public/img/blog/${blog.image}`}
               alt="pic.jpg"
             />
           </div>
@@ -114,7 +114,7 @@ function Readblog() {
                       <div className="cmnts">
                         <div className="first">
                           <Avatar
-                            src={`https://blog-post-api-production.up.railway.app/public/img/user/${comment.photo}`}
+                            src={`https://blog-post-backend-api.onrender.com/public/img/user/${comment.photo}`}
                           />
                         </div>
                         <div className="name-cmnt">

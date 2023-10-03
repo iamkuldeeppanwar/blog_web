@@ -21,7 +21,7 @@ function Signup() {
 
   const Signup = async (e) => {
     e.preventDefault();
-    await fetch(`https://blog-post-api-production.up.railway.app/users`, {
+    await fetch(`https://blog-post-backend-api.onrender.com/users`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

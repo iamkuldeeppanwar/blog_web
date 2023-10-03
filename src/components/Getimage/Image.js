@@ -7,7 +7,7 @@ function Image(props) {
   useEffect(() => {
     axios
       .get(
-        `https://blog-post-api-production.up.railway.app/blogs/${props.id}/avatar`,
+        `https://blog-post-backend-api.onrender.com/blogs/${props.id}/avatar`,
         {
           headers: {
             Authorization: `${localStorage.getItem("Authorization")}`,
@@ -23,7 +23,7 @@ function Image(props) {
     <div>
       <img
         className="createimage"
-        src={`https://blog-post-api-production.up.railway.app/public/img/blog/${pic}`}
+        src={`https://blog-post-backend-api.onrender.com/public/img/blog/${pic}`}
       />
     </div>
   );

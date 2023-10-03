@@ -27,7 +27,7 @@ function Cards({ header, id, description, avatar, name, image }) {
               aria-label="recipe"
               className="cardPic"
               alt="img"
-              src={`https://blog-post-api-production.up.railway.app/public/img/user/${avatar}`}
+              src={`https://blog-post-backend-api.onrender.com/public/img/user/${avatar}`}
             />
           }
           title={name}
@@ -36,7 +36,7 @@ function Cards({ header, id, description, avatar, name, image }) {
         <CardMedia
           component="img"
           height="194"
-          image={`https://blog-post-api-production.up.railway.app/public/img/blog/${image}`}
+          image={`https://blog-post-backend-api.onrender.com/public/img/blog/${image}`}
           alt="img"
         />
         <CardContent>

@@ -29,7 +29,7 @@ function Profile() {
     data.append("photo", avatar);
 
     await fetch(
-      `https://blog-post-api-production.up.railway.app/users/${localStorage.getItem(
+      `https://blog-post-backend-api.onrender.com/users/${localStorage.getItem(
         "id"
       )}`,
       {
@@ -57,7 +57,7 @@ function Profile() {
     } else {
       await axios
         .post(
-          `https://blog-post-api-production.up.railway.app/users/me/avatar`,
+          `https://blog-post-backend-api.onrender.com/users/me/avatar`,
           data,
           {
             headers: {

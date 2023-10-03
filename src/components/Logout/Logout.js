@@ -4,16 +4,13 @@ import { useNavigate } from "react-router";
 function Logout() {
   const Navigate = useNavigate();
   const Logout = async () => {
-    await fetch(
-      `https://blog-post-api-production.up.railway.app/users/logout`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `${localStorage.getItem("Authorization")}`,
-        },
-      }
-    )
+    await fetch(`https://blog-post-backend-api.onrender.com/users/logout`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `${localStorage.getItem("Authorization")}`,
+      },
+    })
       .then((response) => response.json())
       .then(() => {
         localStorage.removeItem("Authorization");
